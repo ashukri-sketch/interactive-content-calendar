@@ -110,14 +110,13 @@
 }
 
 .dark {
-  .dark {
-  /* Page background (almost black) */
+  /* Page background – deep charcoal */
   --background: #050609;
 
   /* Main text */
   --foreground: #f9fafb;
 
-  /* Cards / surfaces */
+  /* Cards / panels */
   --card: #111827;
   --card-foreground: #f9fafb;
 
@@ -125,15 +124,15 @@
   --popover: #020617;
   --popover-foreground: #f9fafb;
 
-  /* Brand teal stays bright in dark mode */
+  /* Brand teal + its text */
   --primary: #06b6d4;
   --primary-foreground: #022c3a;
 
-  /* Pills / subtle chips */
+  /* Secondary chips / subtle surfaces */
   --secondary: #1f2937;
   --secondary-foreground: #e5e7eb;
 
-  /* Muted areas (subtle backgrounds) */
+  /* Muted backgrounds + text */
   --muted: #020617;
   --muted-foreground: #9ca3af;
 
@@ -149,21 +148,10 @@
   --border: #1f2933;
   --input: #1f2933;
   --ring: #38bdf8;
+
+  /* keep your font-weight vars etc. if you had them */
   --font-weight-medium: 500;
   --font-weight-normal: 400;
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
 }
 
 @theme inline {
