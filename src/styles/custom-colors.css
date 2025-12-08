@@ -1,0 +1,135 @@
+/* Custom Color System Variables */
+
+:root {
+  /* Primary Colors */
+  --color-calypso: #006781;
+  --color-calypso-600: #00bfe3;
+  
+  /* Accent Colors */
+  --color-pistachio: #95b730;
+  --color-tulip: #f0b52b;
+  
+  /* Background & Surface */
+  --color-alto-50: #f7f7f7;
+  --color-white: #ffffff;
+  
+  /* Text */
+  --color-white-950: #292929;
+  
+  /* Status Colors */
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+  
+  /* Priority Colors */
+  --color-priority-high: #ef4444;
+  --color-priority-medium: #f59e0b;
+  --color-priority-low: #10b981;
+  
+  /* Notification */
+  --color-notification-badge: #dc2626;
+  
+  /* Borders & Shadows */
+  --border-radius: 12px;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+  
+  /* Spacing (8px grid) */
+  --spacing-1: 8px;
+  --spacing-2: 16px;
+  --spacing-3: 24px;
+  --spacing-4: 32px;
+  --spacing-5: 40px;
+  --spacing-6: 48px;
+  
+  /* Transitions */
+  --transition-fast: 150ms ease-out;
+  --transition-base: 300ms ease-out;
+  --transition-slow: 500ms ease-out;
+}
+
+/* Dark Mode Overrides */
+.dark {
+  --color-alto-50: #1a1a1a;
+  --color-white: #2d2d2d;
+  --color-white-950: #f7f7f7;
+}
+
+/* Custom Tailwind Utilities */
+.bg-calypso {
+  background-color: var(--color-calypso);
+}
+
+.bg-calypso-600 {
+  background-color: var(--color-calypso-600);
+}
+
+.bg-pistachio {
+  background-color: var(--color-pistachio);
+}
+
+.bg-tulip {
+  background-color: var(--color-tulip);
+}
+
+.text-calypso {
+  color: var(--color-calypso);
+}
+
+.text-calypso-600 {
+  color: var(--color-calypso-600);
+}
+
+.text-pistachio {
+  color: var(--color-pistachio);
+}
+
+.text-tulip {
+  color: var(--color-tulip);
+}
+
+.border-calypso {
+  border-color: var(--color-calypso);
+}
+
+.hover\:bg-calypso:hover {
+  background-color: var(--color-calypso);
+}
+
+.hover\:bg-calypso-600:hover {
+  background-color: var(--color-calypso-600);
+}
+
+/* Notification Badge */
+.notification-badge {
+  background-color: var(--color-notification-badge);
+  color: white;
+  border-radius: 9999px;
+  padding: 2px 6px;
+  font-size: 11px;
+  font-weight: 600;
+  min-width: 18px;
+  text-align: center;
+}
+
+/* Priority Badges */
+.priority-high {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: var(--color-priority-high);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.priority-medium {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: var(--color-priority-medium);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.priority-low {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--color-priority-low);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
