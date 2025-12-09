@@ -2474,7 +2474,7 @@
 
   .dark .glass-panel {
     background: var(--glass-fill-dark);
-    border: 1px solid #ffffff26;
+    border: 1px solid #111827f2;
   }
 
   .glass-panel-lg {
