@@ -2475,6 +2475,30 @@
   .dark .glass-panel {
     background: var(--glass-fill-dark);
     border: 1px solid #111827f2;
+    /* === Dark mode readability tweaks === */
+
+/* Make any "muted" or soft text much more readable in dark mode */
+.dark [class*="text-muted"],
+.dark [class*="text-soft"] {
+  color: #e5e7eb;
+}
+
+/* A lot of the Figma export uses opacity utilities for subtle text.
+   In dark mode that makes it almost invisible, so we bump it up. */
+.dark .opacity-50,
+.dark .opacity-60,
+.dark .opacity-70 {
+  opacity: 0.9;
+}
+
+/* Any glass / modal / card surfaces should default to bright text */
+.dark [class*="glass"],
+.dark [class*="Glass"],
+.dark [class*="card"],
+.dark [class*="Card"],
+.dark [class*="modal"],
+.dark [class*="Modal"] {
+  color: #e5e7eb;
   }
 
   .glass-panel-lg {
